@@ -1,0 +1,20 @@
+[gd_resource type="AudioBusLayout" load_steps=3 format=3 uid="uid://cicnmivrjrnt4"]
+
+[sub_resource type="AudioEffectDelay" id="AudioEffectDelay_phcjj"]
+resource_name = "Delay"
+
+[sub_resource type="AudioEffectChorus" id="AudioEffectChorus_cswfj"]
+resource_name = "Chorus"
+
+[resource]
+bus/0/volume_db = 4.43349
+bus/0/effect/0/effect = SubResource("AudioEffectDelay_phcjj")
+bus/0/effect/0/enabled = true
+bus/0/effect/1/effect = SubResource("AudioEffectChorus_cswfj")
+bus/0/effect/1/enabled = true
+bus/1/name = &"SFX"
+bus/1/solo = false
+bus/1/mute = false
+bus/1/bypass_fx = false
+bus/1/volume_db = 0.0
+bus/1/send = &"Master"
